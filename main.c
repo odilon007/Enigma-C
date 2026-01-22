@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include "../include/interface.h"
-#include "../include/file_manager.h"
+#include<ctype.h>
+#include "interface.h"
+#include "file_manager.h"
 
 void menuCriptografia() {
     exibirMenuCrypto();
@@ -11,7 +12,7 @@ void menuCriptografia() {
     switch (op) {
         case 1:
             exibirMenuXOR();
-            //dadosCrypto();
+            dadosCrypto();
             break;
         case 2:
             printf("Desenvokvendo\n");
@@ -24,8 +25,8 @@ void menuCriptografia() {
 
 void menuDescriptografia() {
     exibirMenuDescrypto();
-    int op;                                            
-    scanf("%d", &op);                          
+    int op;
+    scanf("%d", &op);
     if (!op) return;
     switch (op) {
         case 1:
@@ -46,10 +47,13 @@ void menuDescriptografia() {
 int main() {
     printf("\033[0;32m");
     exibirLogo();
-    int op;
+    int op=1;
     while (op != 0) {
         exibirMenu();
-        scanf("%d", &op);
+        if(scanf("%d", &op) == 0){
+            opcaoInvalida();
+            break;
+        }
         if (!op) break;
         switch (op) {
             case 1:
