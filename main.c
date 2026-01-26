@@ -4,48 +4,7 @@
 #include "interface.h"
 #include "file_manager.h"
 
-void menuCriptografia() {
-    exibirMenuCrypto();
-    int op;
-    scanf("%d", &op);
-    if (!op) return;
-    switch (op) {
-        case 1:
-            exibirMenuXOR();
-            dadosCrypto();
-            break;
-        case 2:
-            printf("Desenvokvendo\n");
-            break;
-        default:
-            opcaoInvalida();
-    }
-}
-
-
-void menuDescriptografia() {
-    exibirMenuDescrypto();
-    int op;
-    scanf("%d", &op);
-    if (!op) return;
-    switch (op) {
-        case 1:
-            exibirMenuXOR();
-            break;
-        case 2:
-            printf("Desenvolvendo\n");
-            break;
-            default:
-            opcaoInvalida();
-            break;
-    }
-}
-
-
-
-
 int main() {
-    printf("\033[0;32m");
     exibirLogo();
     int op=1;
     while (op != 0) {
@@ -57,10 +16,12 @@ int main() {
         if (!op) break;
         switch (op) {
             case 1:
-                menuCriptografia();
+                printf("Dados criptografia:\n\n");
+                dadosCrypto();
                 break;
             case 2:
-                menuDescriptografia();
+                printf("Dados descriptografia:\n\n");
+                dadosCrypto();
                 break;
             default:
                 opcaoInvalida();

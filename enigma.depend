@@ -29,3 +29,24 @@
 
 1769089432 z:\202514320015\documents\enigma\crypto.h
 
+1769432972 source:z:\202514320015\desktop\project\enigma-c\crypto.c
+	<stdio.h>
+	<stdlib.h>
+	"crypto.h"
+
+1769432972 z:\202514320015\desktop\project\enigma-c\crypto.h
+
+1769432972 source:z:\202514320015\desktop\project\enigma-c\file_manager.c
+	<stdio.h>
+	"file_manager.h"
+	<string.h>
+	"crypto.h"
+
+1769432972 z:\202514320015\desktop\project\enigma-c\file_manager.h
+
+1769433774 source:z:\202514320015\desktop\project\enigma-c\interface.c
+	<stdio.h>
+	"interface.h"
+
+1769433774 z:\202514320015\desktop\project\enigma-c\interface.h
+
