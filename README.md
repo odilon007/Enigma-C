@@ -14,14 +14,9 @@ O **Enigma-C** é uma ferramenta de linha de comando desenvolvida em linguagem C
 - **Compilador:** GCC
 - **Bibliotecas Padrão:** `stdio.h`, `stdlib.h`, `string.h`, `time.h`
 
-## 📂 Estrutura do Projeto
-- `/src`: Arquivos fonte (`.c`)
-- `/include`: Arquivos de cabeçalho (`.h`)
-- `/bin`: Executável gerado
-- `Makefile`: Script de compilação automatizada
 
 ## ⚙️ Como Compilar e Rodar
 Para compilar o projeto, certifique-se de ter o GCC instalado e execute:
 
 ```bash
-gcc src/*.c -I include -o enigma-c
+gcc *.c -I include -o enigma-c
